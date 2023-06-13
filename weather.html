@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="city">
+    <button onclick="find()">find the weather</button>
+    <h1>temprature : <span id="temp"></span></h1>
+
+    <script>
+        function find(){
+            var cityname= document.getElementById("city").value
+            let apiURL=`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=47b3dccac2ca5b66a62be7ce15d505bf`
+        }
+
+
+    </script>
+
+</body>
+</html>

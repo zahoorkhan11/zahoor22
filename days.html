@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" style="text-align: center; width: 500px; margin-left: 400px; background-color: blueviolet;" >
+        <ul >Days</ul>
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wedendsday</li>
+        <li>Thursaday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous">
+    </script>
+    <script>
+       $("document").ready(function(){  
+
+            $(".box").children(":nth-child(2)").css({backgroundColor:"pink"})
+            $(".box").children(":nth-child(3)").css({backgroundColor:"orange"})
+            $(".box").children(":nth-child(4)").css({backgroundColor:"purple"})
+            $(".box").children(":nth-child(5)").css({backgroundColor:"orange"})
+            $(".box").children(":nth-child(6)").css({backgroundColor:"green"})
+            $(".box").children(":nth-child(7)").css({backgroundColor:"orange"})
+            $(".box").children(":nth-child(8)").css({backgroundColor:"yellow"})
+        })
+    </script>
+</body>
+</html>
